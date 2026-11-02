@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niruta Kadel - Software Developer & AI Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="loader-ring"></div>
+    <span>Loading</span>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- BG FLOATING SHAPES -->
+  <div class="bg-shapes">
+    <div class="shape s1"></div>
+    <div class="shape s2"></div>
+    <div class="shape s3"></div>
+  </div>
+
+  <!-- PARTICLES -->
+  <canvas id="particles"></canvas>
+
+
+       
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-dot">N</span> Niruta
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════
+       HERO
+       ═══════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-status"><span class="pulse"></span> Open to opportunities</div>
+        <p class="hero-hello">Hello world, I'm —</p>
+        <h1 class="hero-name">Niruta Kadel <span class="wave">👋</span></h1>
+        <p class="hero-title"><span class="typed-text" id="typed"></span><span class="cursor-blink"></span></p>
+        <p class="hero-desc">
+          Results-driven Software Developer building scalable web & mobile apps, and modern AI. Passionate about clean architecture 
+          and impactful digital products.
+        </p>
+        <div class="hero-links">
+          <a href="mailto:kadelniruta@gmail.com" class="hero-link"><i class="fas fa-envelope"></i> kadelniruta@gmail.com</a>
+          <a href="tel:+9779860682226" class="hero-link"><i class="fas fa-phone"></i> +977 9860682226</a>
+          <a href="https://github.com/Kadelniruta" target="_blank" class="hero-link"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/nirutakadel/" target="_blank" class="hero-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Contact Me</a>
+          <a href="NirutaKadel_CV.pdf" class="btn btn-ghost" download><i class="fas fa-download"></i> Download CV</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <img src="assets/profile.png" alt="Niruta Kadel">
+            </div>
+          </div>
+          <div class="orbit">
+            <div class="orbit-dot"><i class="fab fa-flutter"></i></div>
+            <div class="orbit-dot"><i class="fab fa-python"></i></div>
+            <div class="orbit-dot"><i class="fas fa-brain"></i></div>
+            <div class="orbit-dot"><i class="fas fa-database"></i></div>
+          </div>
+          <div class="hero-stats hero-stat stat-1"><div class="num" data-count="3.82">0</div><div class="label">CGPA</div></div>
+          <div class="hero-stats hero-stat stat-2"><div class="num" data-count="3">0</div><div class="label">Projects</div></div>
+          <div class="hero-stats hero-stat stat-3"><div class="num" data-count="20">0</div><div class="label">Skills</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       ABOUT
+       ═══════════════════════════════════ -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="reveal-left">
+          <span class="section-tag"><i class="fas fa-circle"></i> About Me</span>
+          <h2 class="section-heading">Crafting software<br>with <span class="grad">purpose & passion</span></h2>
+          <p style="color:var(--body);font-size:1.04rem;line-height:1.9;margin-top:20px">
+            I'm <strong style="color:var(--dark)">Niruta Kadel</strong>, a Software Developer based in Kathmandu, Nepal. Currently 
+            completing my BCS (Hons.) from Taylor's University through IIMS College with a 
+            <strong style="color:var(--dark)">CGPA of 3.82</strong> — earning the Dean's List Award and Academic Excellence 
+            Scholarship for three consecutive years.
+          </p>
+          <p style="color:var(--body);font-size:1.04rem;line-height:1.9;margin-top:12px">
+            My expertise spans mobile development with <strong style="color:var(--dark)">Flutter</strong>, 
+            backend engineering with <strong style="color:var(--dark)">FastAPI & Supabase</strong>, and AI/ML with 
+            <strong style="color:var(--dark)">PyTorch & TensorFlow</strong>. I build products that are both 
+            technically robust and user-centric.
+          </p>
+        </div>
+        <div class="about-cards reveal-right">
+          <div class="about-card stagger-1">
+            <div class="ac-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="ac-num">KTM</div>
+            <div class="ac-label">Based in</div>
+          </div>
+          <div class="about-card stagger-2">
+            <div class="ac-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="ac-num">3.82</div>
+            <div class="ac-label">CGPA</div>
+          </div>
+          <div class="about-card stagger-3">
+            <div class="ac-icon"><i class="fas fa-trophy"></i></div>
+            <div class="ac-num">3x</div>
+            <div class="ac-label">Dean's List</div>
+          </div>
+          <div class="about-card stagger-4">
+            <div class="ac-icon"><i class="fas fa-rocket"></i></div>
+            <div class="ac-num">3+</div>
+            <div class="ac-label">Projects</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       EDUCATION
+       ═══════════════════════════════════ -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-circle"></i> Education</span>
+        <h2 class="section-heading">Academic <span class="grad">Journey</span></h2>
+        <p class="section-sub">My academic path in Computer Science and Software Engineering</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal stagger-1">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <h3>Bachelor of Computer Science — BCS (Hons.)</h3>
+            <h4>IIMS, Naxal, Kathmandu</h4>
+            <div class="tl-meta"><i class="fas fa-university"></i> Taylor's University <i class="fas fa-calendar-alt"></i> Aug 2022 – Aug 2026</div>
+            <div class="tl-gpa">CGPA: 3.82</div>
+            <div class="tl-award"><i class="fas fa-trophy"></i> Dean's List Award & Academic Excellence Scholarship (3 consecutive years)</div>
+          </div>
+        </div>
+        <div class="tl-item reveal stagger-2">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <h3>Plus 2 — Higher Secondary Education</h3>
+            <h4>Bageshworee Secondary School, Malekhu, Dhading</h4>
+            <div class="tl-meta"><i class="fas fa-calendar-alt"></i> 2018 – 2020</div>
+            <div class="tl-gpa">GPA: 3.46</div>
+          </div>
+        </div>
+        <div class="tl-item reveal stagger-3">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <h3>Secondary Education Examination (SEE)</h3>
+            <h4>Bright Future English Boarding School, Malekhu, Dhading</h4>
+            <div class="tl-meta"><i class="fas fa-calendar-alt"></i> 2018</div>
+            <div class="tl-gpa">GPA: 3.75</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       EXPERIENCE
+       ═══════════════════════════════════ -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-circle"></i> Experience</span>
+        <h2 class="section-heading">Where I've <span class="grad">Contributed</span></h2>
+        <p class="section-sub">Professional experience building real-world products</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <h3>Software Developer Intern</h3>
+            <h4>Lumica Labs Pvt. Ltd., Mid Baneshwore, Kathmandu</h4>
+            <div class="tl-meta"><i class="fas fa-calendar-alt"></i> Jan 2026 – Jun 2026</div>
+            <ul class="exp-list">
+              <li>Shipped features end-to-end across a production Flutter and Supabase application serving real users</li>
+              <li>Owned backend logic for authentication, notifications, and AI features using Supabase Edge Functions</li>
+              <li>Wrote and maintained unit and integration tests; participated in code reviews</li>
+              <li>Took end-to-end ownership of security-sensitive flows including user authentication and transactional email</li>
+              <li>Collaborated cross-functionally with product, design, and engineering teams</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <h3>AI & Machine Learning Tutor</h3>
+            <h4>Engineers Vlogs, Kathmandu</h4>
+            <div class="tl-meta"><i class="fas fa-calendar-alt"></i> Mar 2025 – Sep 2025</div>
+            <ul class="exp-list">
+              <li>Delivered practical training sessions on Python, Machine Learning, and AI fundamentals</li>
+              <li>Guided students through hands-on projects and model development workflows</li>
+              <li>Mentored learners in debugging, experimentation, and systematic problem-solving</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       PROJECTS
+       ═══════════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-circle"></i> Projects</span>
+        <h2 class="section-heading">Featured <span class="grad">Work</span></h2>
+        <p class="section-sub">Projects that showcase my skills across full-stack and AI development</p>
+      </div>
+      <div class="projects-grid">
+        <div class="proj-card reveal stagger-1">
+          <div class="proj-top">
+            <div class="proj-icon-wrap"><i class="fas fa-wand-magic-sparkles"></i></div>
+            <div class="proj-links"><a href="https://github.com/Kadelniruta" target="_blank"><i class="fab fa-github"></i></a></div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-date">Jan 2026 – Jun 2026</div>
+            <h3>Styliq — AI-Powered Wardrobe Management</h3>
+            <p>Full-stack AI wardrobe app with OOTD suggestions, outfit builder, recommendation engine using vector embeddings & cosine similarity, weather-aware filtering, and conversational AI styling assistant.</p>
+            <div class="proj-tags">
+              <span>Flutter</span><span>Supabase</span><span>Next.js</span>
+              <span>Gemini API</span><span>OpenWeather</span><span>Edge Functions</span>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card reveal stagger-2">
+          <div class="proj-top">
+            <div class="proj-icon-wrap"><i class="fas fa-utensils"></i></div>
+            <div class="proj-links"><a href="https://github.com/Kadelniruta" target="_blank"><i class="fab fa-github"></i></a></div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-date">Nov 2025 · eSewa Career Climber</div>
+            <h3>RecipeShare — AI-Powered Recipe Platform</h3>
+            <p>Hybrid recommendation system using ALS collaborative filtering and Two-Tower Deep Learning model (PyTorch) with social boosts, content similarity, and popularity re-ranking.</p>
+            <div class="proj-tags">
+              <span>Python</span><span>PyTorch</span><span>ALS</span>
+              <span>REST APIs</span><span>Deep Learning</span>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card reveal stagger-3">
+          <div class="proj-top">
+            <div class="proj-icon-wrap"><i class="fas fa-shield-halved"></i></div>
+            <div class="proj-links"><a href="https://github.com/Kadelniruta" target="_blank"><i class="fab fa-github"></i></a></div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-date">Jul – Dec 2025 · Capstone</div>
+            <h3>Fake Review Detection & Sentiment Analysis</h3>
+            <p>ML system to detect fake product reviews at scale. Fine-tuned BERT achieving ~89% accuracy with complete text-processing pipeline and REST API predictions.</p>
+            <div class="proj-tags">
+              <span>BERT</span><span>Flask</span><span>Scikit-learn</span>
+              <span>NLTK</span><span>TF-IDF</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SKILLS
+       ═══════════════════════════════════ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-circle"></i> Skills</span>
+        <h2 class="section-heading">My <span class="grad">Toolkit</span></h2>
+        <p class="section-sub">Technologies and tools I use to build great software</p>
+      </div>
+      <div class="skills-wrap">
+        <div class="skill-group reveal"><div class="sg-title"><i class="fas fa-mobile-alt"></i> Mobile Development</div>
+          <div class="skill-pills"><span class="pill">Flutter</span><span class="pill">Dart</span></div>
+        </div>
+        <div class="skill-group reveal"><div class="sg-title"><i class="fas fa-server"></i> Backend & Web</div>
+          <div class="skill-pills"><span class="pill">FastAPI</span><span class="pill">Flask</span><span class="pill">Django</span><span class="pill">Next.js</span><span class="pill">REST APIs</span><span class="pill">Supabase</span></div>
+        </div>
+        <div class="skill-group reveal"><div class="sg-title"><i class="fas fa-brain"></i> AI & Machine Learning</div>
+          <div class="skill-pills"><span class="pill">PyTorch</span><span class="pill">TensorFlow</span><span class="pill">Scikit-learn</span><span class="pill">Hugging Face</span><span class="pill">Vector Embeddings</span><span class="pill">Rec. Systems</span><span class="pill">Gemini API</span></div>
+        </div>
+        <div class="skill-group reveal"><div class="sg-title"><i class="fas fa-database"></i> Databases</div>
+          <div class="skill-pills"><span class="pill">PostgreSQL</span><span class="pill">MySQL</span><span class="pill">Oracle</span><span class="pill">Supabase DB</span></div>
+        </div>
+        <div class="skill-group reveal"><div class="sg-title"><i class="fas fa-chart-bar"></i> Data & Analytics</div>
+          <div class="skill-pills"><span class="pill">Pandas</span><span class="pill">NumPy</span><span class="pill">Apache Spark</span><span class="pill">Power BI</span><span class="pill">Matplotlib</span></div>
+        </div>
+        <div class="skill-group reveal"><div class="sg-title"><i class="fas fa-wrench"></i> Tools & Platforms</div>
+          <div class="skill-pills"><span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">Docker</span><span class="pill">Jira</span><span class="pill">FCM</span><span class="pill">Mailtrap</span><span class="pill">OpenWeather API</span></div>
+        </div>
+        <div class="skill-group reveal" style="grid-column:1/-1"><div class="sg-title"><i class="fas fa-users"></i> Soft Skills</div>
+          <div class="skill-pills"><span class="pill">Problem Solving</span><span class="pill">Team Collaboration</span><span class="pill">Communication</span><span class="pill">Leadership</span><span class="pill">Presentation</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       CERTIFICATIONS
+       ═══════════════════════════════════ -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-circle"></i> Certifications</span>
+        <h2 class="section-heading">Training & <span class="grad">Credentials</span></h2>
+        <p class="section-sub">Professional certifications and industry programs</p>
+      </div>
+      <div class="cert-cards">
+        <div class="cert-card reveal stagger-1">
+          <div class="cert-ic"><i class="fas fa-award"></i></div>
+          <div>
+            <h3>eSewa Career Climber Training Program</h3>
+            <div class="cert-org">eSewa Ltd.</div>
+            <div class="cert-date">May 2025</div>
+            <div class="cert-desc">Industry-focused training covering software development, ML systems, REST APIs, SDLC, DevOps fundamentals, and AI integration.</div>
+          </div>
+        </div>
+        <div class="cert-card reveal stagger-2">
+          <div class="cert-ic"><i class="fas fa-award"></i></div>
+          <div>
+            <h3>Python with AI — Professional Training (80 Hrs)</h3>
+            <div class="cert-org">Broadway Infosys — IIMS College</div>
+            <div class="cert-date">Dec 2024 – Feb 2025</div>
+            <div class="cert-desc">Intensive training in Machine Learning and Deep Learning with practical model development and evaluation.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       LEADERSHIP
+       ═══════════════════════════════════ -->
+  <section class="section section-alt" id="leadership">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-circle"></i> Leadership</span>
+        <h2 class="section-heading">Beyond <span class="grad">Code</span></h2>
+        <p class="section-sub">Contributing to the student community and campus life</p>
+      </div>
+      <div class="lead-card reveal">
+        <div class="lead-ic"><i class="fas fa-users"></i></div>
+        <div>
+          <h3>SSCC Member — Computer Science Representative</h3>
+          <h4>IIMS College, Kathmandu</h4>
+          <span class="lead-date"><i class="fas fa-calendar-alt"></i> Jan 2023 – Present</span>
+          <ul>
+            <li>Represented Computer Science students in faculty discussions and academic initiatives</li>
+            <li>Facilitated communication between students and administration</li>
+            <li>Contributed to academic feedback processes and student engagement activities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       CONTACT
+       ═══════════════════════════════════ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-circle"></i> Contact</span>
+        <h2 class="section-heading">Let's <span class="grad">Connect</span></h2>
+        <p class="section-sub">Have a project in mind or just want to say hi? I'd love to hear from you!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="reveal-left">
+          <h3>Contact Information</h3>
+          <div class="c-row">
+            <div class="c-icon"><i class="fas fa-envelope"></i></div>
+            <div><span class="c-label">Email</span><span class="c-val"><a href="mailto:kadelniruta@gmail.com">kadelniruta@gmail.com</a></span></div>
+          </div>
+          <div class="c-row">
+            <div class="c-icon"><i class="fas fa-phone"></i></div>
+            <div><span class="c-label">Phone</span><span class="c-val"><a href="tel:+9779860682226">+977 9860682226</a></span></div>
+          </div>
+          <div class="c-row">
+            <div class="c-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><span class="c-label">Location</span><span class="c-val">Banasthali, Kathmandu, Nepal</span></div>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/Kadelniruta" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nirutakadel/" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:kadelniruta@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+9779860682226" class="social-btn"><i class="fas fa-phone"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <h3>Send a Message</h3>
+          <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed & built with <span class="heart">&hearts;</span> by Niruta Kadel &copy; 2026</p>
+      <div class="footer-links">
+        <a href="https://github.com/Kadelniruta" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nirutakadel/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:kadelniruta@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
